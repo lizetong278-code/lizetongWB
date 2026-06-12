@@ -6,26 +6,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>李泽同｜ToB 销售、跨境电商与 SAAS</title>
-  <meta name="description" content="李泽同，深圳 ToB 销售 / 跨境电商 / SAAS 方向。擅长高客单价、长决策链、复杂组织场景下的客户开发、需求激发、资源整合与签约推进。" />
+  <title>李泽同｜KA 客户经理 / ToB 销售</title>
+  <meta name="description" content="李泽同，深圳 KA 客户经理 / ToB 销售。擅长 KA 客户开发、百万级 ToB 成交、顾问式销售与复杂决策链推进。" />
 
   <style>
     :root{
-      --paper:#f4eadc;
-      --paper-2:#efe1ce;
-      --ink:#17343c;
-      --muted:#6e665d;
-      --line:rgba(23,52,60,.22);
+      --paper:#f2e7d7;
+      --paper-light:#f8efe3;
+      --paper-deep:#e8d6bf;
+      --ink:#15383f;
+      --muted:#6f675e;
+      --soft:#928679;
+      --line:rgba(21,56,63,.20);
+      --line-strong:rgba(21,56,63,.34);
+      --accent:#b7653f;
+      --accent-soft:#d7a76a;
       --deep:#0f3a42;
-      --accent:#b7653a;
-      --accent-2:#d6a568;
-      --card:#fbf6ee;
-      --white:#fffaf2;
-      --shadow:0 24px 80px rgba(31,38,33,.10);
-      --radius:26px;
+      --cream:#fff8ef;
+      --cream-2:rgba(255,248,239,.56);
+      --shadow:0 26px 90px rgba(37,39,34,.10);
+      --radius-xl:40px;
+      --radius-lg:30px;
+      --radius-md:22px;
+      --max:1180px;
     }
 
-    *{box-sizing:border-box}
+    *{
+      box-sizing:border-box;
+    }
 
     html{
       scroll-behavior:smooth;
@@ -35,25 +43,27 @@
       margin:0;
       color:var(--ink);
       background:
-        radial-gradient(circle at 12% 10%, rgba(214,165,104,.24), transparent 28%),
-        radial-gradient(circle at 92% 4%, rgba(183,101,58,.13), transparent 24%),
-        linear-gradient(135deg, var(--paper) 0%, #f7efe4 44%, var(--paper-2) 100%);
+        radial-gradient(circle at 8% 8%, rgba(215,167,106,.30), transparent 29%),
+        radial-gradient(circle at 92% 2%, rgba(183,101,63,.13), transparent 27%),
+        linear-gradient(135deg, var(--paper) 0%, var(--paper-light) 46%, var(--paper-deep) 100%);
       font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;
-      line-height:1.55;
+      line-height:1.56;
       letter-spacing:.01em;
+      -webkit-font-smoothing:antialiased;
     }
 
     body::before{
       content:"";
       position:fixed;
       inset:0;
+      z-index:-1;
       pointer-events:none;
-      opacity:.38;
+      opacity:.35;
       background-image:
-        linear-gradient(rgba(23,52,60,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(23,52,60,.025) 1px, transparent 1px);
+        linear-gradient(rgba(21,56,63,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(21,56,63,.026) 1px, transparent 1px);
       background-size:38px 38px;
-      mask-image:linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.25));
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.95), rgba(0,0,0,.18));
     }
 
     a{
@@ -62,23 +72,23 @@
     }
 
     .page{
-      width:min(1180px, calc(100% - 40px));
+      width:min(var(--max), calc(100% - 40px));
       margin:0 auto;
     }
 
     .nav{
       position:sticky;
       top:0;
-      z-index:20;
-      backdrop-filter:blur(20px);
-      background:rgba(244,234,220,.78);
-      border-bottom:1px solid rgba(23,52,60,.12);
+      z-index:50;
+      border-bottom:1px solid rgba(21,56,63,.12);
+      background:rgba(242,231,215,.78);
+      backdrop-filter:blur(18px);
     }
 
     .nav-inner{
-      width:min(1180px, calc(100% - 40px));
-      margin:0 auto;
+      width:min(var(--max), calc(100% - 40px));
       min-height:72px;
+      margin:0 auto;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -89,7 +99,7 @@
       display:flex;
       align-items:center;
       gap:12px;
-      font-weight:800;
+      font-weight:850;
       letter-spacing:.04em;
     }
 
@@ -100,9 +110,9 @@
       border-radius:50%;
       display:grid;
       place-items:center;
-      font-family:Georgia,serif;
+      background:rgba(255,248,239,.54);
+      font-family:Georgia,"Times New Roman",serif;
       font-size:15px;
-      background:rgba(255,250,242,.48);
     }
 
     .nav-links{
@@ -113,8 +123,8 @@
       font-size:14px;
     }
 
-    。nav-links a{
-      transition:.2s ease;
+    .nav-links a{
+      transition:.22s ease;
     }
 
     .nav-links a:hover{
@@ -123,23 +133,23 @@
 
     .hero{
       min-height:calc(100vh - 72px);
+      padding:76px 0 52px;
       display:grid;
-      grid-template-columns:1.2fr .8fr;
-      gap:56px;
+      grid-template-columns:1.17fr .83fr;
+      gap:58px;
       align-items:center;
-      padding:78px 0 50px;
     }
 
     .eyebrow{
+      margin-bottom:22px;
       display:flex;
       align-items:center;
       gap:12px;
       color:var(--accent);
-      font-weight:800;
       font-size:13px;
-      text-transform:uppercase;
+      font-weight:850;
       letter-spacing:.16em;
-      margin-bottom:22px;
+      text-transform:uppercase;
     }
 
     .eyebrow::before{
@@ -151,54 +161,56 @@
 
     .hero h1{
       margin:0;
-      max-width:860px;
+      max-width:870px;
       font-family:Georgia,"Times New Roman","Songti SC",serif;
-      font-size:clamp(52px, 7vw, 104px);
-      line-height:.96;
-      letter-spacing:-.065em;
+      font-size:clamp(54px, 7.4vw, 108px);
+      line-height:.94;
+      letter-spacing:-.07em;
       font-weight:500;
     }
 
     .hero-title-note{
       display:inline-block;
-      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;
-      font-size:clamp(18px, 1.8vw, 24px);
-      letter-spacing:.02em;
-      font-weight:700;
+      margin-left:12px;
       vertical-align:middle;
       color:var(--accent);
-      margin-left:10px;
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;
+      font-size:clamp(18px, 1.75vw, 24px);
+      line-height:1.2;
+      font-weight:780;
+      letter-spacing:.02em;
     }
 
     .position{
-      margin:26px 0 0;
-      font-size:clamp(19px, 2vw, 27px);
-      font-weight:750;
-      line-height:1.35;
-      max-width:720px;
+      margin:27px 0 0;
+      max-width:760px;
+      font-size:clamp(20px, 2.05vw, 28px);
+      line-height:1.34;
+      font-weight:800;
+      letter-spacing:-.015em;
     }
 
     .value{
       margin:18px 0 0;
-      max-width:690px;
-      font-size:17px;
+      max-width:720px;
       color:var(--muted);
+      font-size:17px;
     }
 
     .hero-proof{
       margin-top:34px;
+      max-width:760px;
       display:grid;
       grid-template-columns:repeat(2, minmax(0, 1fr));
       gap:12px;
-      max-width:720px;
     }
 
-    。proof-pill{
-      min-height:86px;
-      padding:17px 18px;
+    .proof-pill{
+      min-height:92px;
+      padding:18px 18px 17px;
       border:1px solid var(--line);
-      border-radius:20px;
-      background:rgba(255,250,242,.38);
+      border-radius:22px;
+      background:rgba(255,248,239,.38);
       display:flex;
       flex-direction:column;
       justify-content:space-between;
@@ -206,16 +218,18 @@
 
     .proof-pill strong{
       display:block;
-      font-family:Georgia,serif;
-      font-size:25px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:26px;
       line-height:1;
-      letter-spacing:-.03em;
+      letter-spacing:-.035em;
+      font-weight:500;
     }
 
     .proof-pill span{
-      margin-top:10px;
+      margin-top:11px;
       color:var(--muted);
       font-size:13px;
+      line-height:1.45;
     }
 
     .cta-row{
@@ -228,26 +242,26 @@
 
     .btn{
       min-height:52px;
-      padding:15px 22px;
+      padding:15px 23px;
+      border:1px solid var(--ink);
       border-radius:999px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
       gap:10px;
-      font-weight:800;
-      border:1px solid var(--ink);
+      font-weight:850;
       transition:.22s ease;
     }
 
     .btn-primary{
+      border-color:var(--deep);
       background:var(--deep);
       color:#fff8eb;
-      border-color:var(--deep);
-      box-shadow:0 14px 34px rgba(15,58,66,.16);
+      box-shadow:0 14px 34px rgba(15,58,66,.17);
     }
 
     .btn-secondary{
-      background:rgba(255,250,242,.36);
+      background:rgba(255,248,239,.38);
       color:var(--ink);
     }
 
@@ -260,36 +274,36 @@
     }
 
     .profile-card{
-      border:1px solid var(--line);
-      border-radius:36px;
       padding:34px;
-      background:rgba(255,250,242,.52);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      background:rgba(255,248,239,.54);
       box-shadow:var(--shadow);
       transform:translateY(18px);
     }
 
     .portrait{
-      height:210px;
-      border-radius:28px;
-      background:
-        radial-gradient(circle at 68% 25%, rgba(214,165,104,.55), transparent 24%),
-        linear-gradient(145deg, rgba(23,52,60,.96), rgba(23,52,60,.72));
+      height:214px;
+      padding:27px;
+      border-radius:30px;
+      position:relative;
+      overflow:hidden;
       color:#fff7ea;
+      background:
+        radial-gradient(circle at 70% 22%, rgba(215,167,106,.58), transparent 24%),
+        linear-gradient(145deg, rgba(21,56,63,.97), rgba(21,56,63,.73));
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      padding:26px;
-      overflow:hidden;
-      position:relative;
     }
 
     .portrait::after{
       content:"李泽同";
       position:absolute;
-      right:-20px;
-      bottom:-26px;
+      right:-22px;
+      bottom:-28px;
       font-family:Georgia,"Times New Roman","Songti SC",serif;
-      font-size:92px;
+      font-size:94px;
       opacity:.13;
       letter-spacing:-.12em;
       white-space:nowrap;
@@ -299,79 +313,85 @@
       position:relative;
       z-index:1;
       color:rgba(255,247,234,.72);
-      letter-spacing:.16em;
+      font-size:12px;
+      font-weight:780;
+      letter-spacing:.17em;
       text-transform:uppercase;
-      font-weight:700;
     }
 
     .portrait strong{
       position:relative;
       z-index:1;
+      max-width:320px;
       font-size:30px;
       line-height:1.12;
-      max-width:280px;
-      letter-spacing:-.03em;
+      letter-spacing:-.035em;
     }
 
     .profile-list{
+      margin-top:28px;
       display:grid;
       gap:18px;
-      margin-top:28px;
     }
 
-    。profile-item{
+    .profile-item{
       padding-bottom:18px;
-      border-bottom:1px solid rgba(23,52,60,.13);
+      border-bottom:1px solid rgba(21,56,63,.13);
     }
 
     .profile-item:last-child{
-      border-bottom:0;
       padding-bottom:0;
+      border-bottom:0;
     }
 
     .profile-item span{
       display:block;
+      margin-bottom:6px;
       color:var(--muted);
       font-size:13px;
-      margin-bottom:5px;
     }
 
     .profile-item strong{
+      display:block;
       font-size:18px;
+      line-height:1.35;
     }
 
     .floating-note{
-      width:230px;
+      width:246px;
       position:absolute;
       right:-20px;
       bottom:-38px;
-      padding:18px 20px;
-      border-radius:22px;
+      padding:19px 20px;
+      border-radius:23px;
       background:var(--accent);
       color:#fff6e9;
-      box-shadow:0 22px 50px rgba(183,101,58,.18);
+      box-shadow:0 22px 50px rgba(183,101,63,.20);
       transform:rotate(-3deg);
     }
 
     .floating-note strong{
       display:block;
-      font-family:Georgia,serif;
-      font-size:34px;
-      line-height:1;
       margin-bottom:8px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:36px;
+      line-height:1;
+      letter-spacing:-.04em;
+      font-weight:500;
     }
 
     .floating-note span{
+      color:rgba(255,246,233,.84);
       font-size:13px;
-      color:rgba(255,246,233,.82);
+      line-height:1.45;
     }
 
     section{
       padding:88px 0;
-      border-top:1px solid rgba(23,52,60,.16);
+      border-top:1px solid rgba(21,56,63,.16);
     }
 
-    。proof-strip{
+    .proof-strip{
       padding:0 0 76px;
       border-top:0;
     }
@@ -379,15 +399,15 @@
     .strip{
       display:grid;
       grid-template-columns:1fr 1fr 1fr 1.15fr;
-      border:1px solid var(--line);
-      border-radius:30px;
       overflow:hidden;
-      background:rgba(255,250,242,.34);
+      border:1px solid var(--line);
+      border-radius:32px;
+      background:rgba(255,248,239,.34);
     }
 
     .strip-item{
-      padding:28px 24px;
-      min-height:158px;
+      min-height:160px;
+      padding:29px 24px;
       border-right:1px solid var(--line);
       display:flex;
       flex-direction:column;
@@ -398,29 +418,30 @@
       border-right:0;
     }
 
-    。strip-item b{
-      font-family:Georgia,serif;
-      font-size:45px;
+    .strip-item b{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:46px;
       line-height:1;
-      letter-spacing:-.055em;
+      letter-spacing:-.06em;
       font-weight:500;
     }
 
-    。strip-item p{
+    .strip-item p{
       margin:18px 0 0;
       color:var(--muted);
       font-size:14px;
+      line-height:1.48;
     }
 
     .section-head{
+      margin-bottom:42px;
       display:grid;
       grid-template-columns:.44fr 1fr;
       gap:44px;
       align-items:end;
-      margin-bottom:42px;
     }
 
-    。section-kicker{
+    .section-kicker{
       color:var(--accent);
       font-size:13px;
       font-weight:850;
@@ -428,20 +449,25 @@
       text-transform:uppercase;
     }
 
+    .section-head h2,
+    .about-copy h2,
+    .contact h2{
+      font-family:Georgia,"Times New Roman","Songti SC",serif;
+      font-weight:500;
+      letter-spacing:-.06em;
+    }
+
     .section-head h2{
       margin:10px 0 0;
-      font-family:Georgia,"Times New Roman","Songti SC",serif;
       font-size:clamp(42px, 5vw, 78px);
       line-height:.98;
-      font-weight:500;
-      letter-spacing:-.058em;
     }
 
     .section-head p{
       margin:0;
+      max-width:665px;
       color:var(--muted);
       font-size:17px;
-      max-width:650px;
     }
 
     .work-grid{
@@ -454,46 +480,51 @@
       align-items:stretch;
     }
 
-    。work-card{
-      background:rgba(255,250,242,.48);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
+    .work-card{
       padding:30px;
-      box-shadow:0 14px 40px rgba(31,38,33,.06);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      background:rgba(255,248,239,.48);
+      box-shadow:0 14px 40px rgba(37,39,34,.06);
     }
 
     .work-card.lead{
       grid-area:lead;
-      min-height:590px;
+      min-height:604px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
       background:
-        linear-gradient(160deg, rgba(255,250,242,.74), rgba(255,250,242,.38)),
-        radial-gradient(circle at 78% 12%, rgba(214,165,104,.28), transparent 28%);
+        linear-gradient(160deg, rgba(255,248,239,.76), rgba(255,248,239,.40)),
+        radial-gradient(circle at 78% 12%, rgba(215,167,106,.30), transparent 28%);
     }
 
-    .work-card.side{grid-area:side}
-    .work-card.side2{grid-area:side2}
+    .work-card.side{
+      grid-area:side;
+    }
+
+    .work-card.side2{
+      grid-area:side2;
+    }
 
     .work-index{
-      font-family:Georgia,serif;
-      color:var(--accent);
-      font-size:17px;
       margin-bottom:32px;
+      color:var(--accent);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:17px;
     }
 
     .work-card h3{
       margin:0;
+      max-width:650px;
       font-size:clamp(28px, 3vw, 46px);
       line-height:1.04;
       letter-spacing:-.045em;
-      max-width:620px;
     }
 
     .work-card:not(.lead) h3{
       font-size:28px;
-      letter-spacing:-.035em;
+      letter-spacing:-.038em;
     }
 
     .work-meta{
@@ -503,17 +534,17 @@
     }
 
     .work-points{
+      margin-top:28px;
       display:grid;
       gap:16px;
-      margin-top:28px;
     }
 
     .point{
+      padding-top:16px;
+      border-top:1px solid rgba(21,56,63,.13);
       display:grid;
       grid-template-columns:96px 1fr;
       gap:16px;
-      padding-top:16px;
-      border-top:1px solid rgba(23,52,60,.13);
     }
 
     .point span{
@@ -527,13 +558,14 @@
     .point p{
       margin:0;
       color:var(--muted);
+      line-height:1.55;
     }
 
     .lead-result{
       margin-top:44px;
       padding:28px;
-      border-radius:24px;
-      background:rgba(23,52,60,.92);
+      border-radius:25px;
+      background:rgba(21,56,63,.93);
       color:#fff7ea;
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -542,16 +574,18 @@
 
     .lead-result strong{
       display:block;
-      font-family:Georgia,serif;
-      font-size:48px;
-      line-height:1;
-      letter-spacing:-.05em;
       margin-bottom:10px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:49px;
+      line-height:1;
+      letter-spacing:-.055em;
+      font-weight:500;
     }
 
     .lead-result span{
-      color:rgba(255,247,234,.75);
+      color:rgba(255,247,234,.76);
       font-size:13px;
+      line-height:1.45;
     }
 
     .experience-wrap{
@@ -565,22 +599,24 @@
       top:106px;
       align-self:start;
       padding:30px;
-      border-radius:28px;
-      background:rgba(255,250,242,.45);
       border:1px solid var(--line);
+      border-radius:30px;
+      background:rgba(255,248,239,.45);
     }
 
     .sticky-note h3{
       margin:0 0 14px;
-      font-family:Georgia,serif;
-      font-size:34px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:35px;
       line-height:1;
-      letter-spacing:-.04em;
+      letter-spacing:-.045em;
+      font-weight:500;
     }
 
     .sticky-note p{
       margin:0;
       color:var(--muted);
+      line-height:1.58;
     }
 
     .timeline{
@@ -589,34 +625,34 @@
     }
 
     .role{
+      padding:30px 0;
+      border-top:1px solid rgba(21,56,63,.18);
       display:grid;
       grid-template-columns:155px 1fr;
       gap:30px;
-      padding:30px 0;
-      border-top:1px solid rgba(23,52,60,.18);
     }
 
     .role:last-child{
-      border-bottom:1px solid rgba(23,52,60,.18);
+      border-bottom:1px solid rgba(21,56,63,.18);
     }
 
     .role time{
       color:var(--accent);
+      font-size:14px;
       font-weight:850;
       letter-spacing:.04em;
-      font-size:14px;
     }
 
-    。role h3{
+    .role h3{
       margin:0;
       font-size:25px;
       line-height:1.25;
       letter-spacing:-.025em;
     }
 
-    .role .company{
-      color:var(--muted);
+    .company{
       margin-top:7px;
+      color:var(--muted);
       font-size:15px;
     }
 
@@ -639,24 +675,21 @@
 
     .about-copy{
       padding:44px;
-      border-radius:34px;
-      background:rgba(255,250,242,.48);
       border:1px solid var(--line);
+      border-radius:36px;
+      background:rgba(255,248,239,.48);
     }
 
     .about-copy h2{
       margin:0;
-      font-family:Georgia,"Times New Roman","Songti SC",serif;
       font-size:clamp(42px, 5vw, 76px);
       line-height:.98;
-      letter-spacing:-.058em;
-      font-weight:500;
     }
 
     .about-copy p{
+      margin:26px 0 0;
       color:var(--muted);
       font-size:17px;
-      margin:26px 0 0;
     }
 
     .about-aside{
@@ -667,8 +700,8 @@
     .mini-card{
       padding:26px;
       border:1px solid var(--line);
-      border-radius:26px;
-      background:rgba(255,250,242,.36);
+      border-radius:27px;
+      background:rgba(255,248,239,.36);
     }
 
     .mini-card span{
@@ -684,11 +717,13 @@
       margin-top:12px;
       font-size:23px;
       line-height:1.25;
+      letter-spacing:-.02em;
     }
 
     .mini-card p{
-      color:var(--muted);
       margin:10px 0 0;
+      color:var(--muted);
+      line-height:1.55;
     }
 
     .contact{
@@ -696,33 +731,30 @@
     }
 
     .contact-panel{
-      border-radius:42px;
-      border:1px solid var(--line);
-      background:
-        radial-gradient(circle at 86% 18%, rgba(214,165,104,.27), transparent 28%),
-        rgba(255,250,242,.52);
       padding:48px;
+      border:1px solid var(--line);
+      border-radius:42px;
+      background:
+        radial-gradient(circle at 86% 18%, rgba(215,167,106,.28), transparent 28%),
+        rgba(255,248,239,.52);
+      box-shadow:var(--shadow);
       display:grid;
       grid-template-columns:1fr .72fr;
       gap:50px;
       align-items:end;
-      box-shadow:var(--shadow);
     }
 
     .contact h2{
       margin:0;
-      font-family:Georgia,"Times New Roman","Songti SC",serif;
+      max-width:720px;
       font-size:clamp(46px, 6vw, 92px);
       line-height:.92;
-      letter-spacing:-.065em;
-      font-weight:500;
-      max-width:720px;
     }
 
     .contact p{
       margin:24px 0 0;
+      max-width:620px;
       color:var(--muted);
-      max-width:610px;
       font-size:17px;
     }
 
@@ -733,9 +765,9 @@
 
     .contact-link{
       padding:18px 20px;
-      border-radius:18px;
-      border:1px solid rgba(23,52,60,.17);
-      background:rgba(255,250,242,.42);
+      border:1px solid rgba(21,56,63,.17);
+      border-radius:19px;
+      background:rgba(255,248,239,.42);
       display:flex;
       justify-content:space-between;
       gap:16px;
@@ -745,7 +777,7 @@
 
     .contact-link:hover{
       transform:translateX(4px);
-      background:rgba(255,250,242,.72);
+      background:rgba(255,248,239,.72);
     }
 
     .contact-link span{
@@ -759,15 +791,15 @@
     }
 
     .footer{
-      width:min(1180px, calc(100% - 40px));
+      width:min(var(--max), calc(100% - 40px));
       margin:0 auto;
       padding:28px 0 46px;
+      border-top:1px solid rgba(21,56,63,.16);
       color:var(--muted);
       font-size:13px;
       display:flex;
       justify-content:space-between;
       gap:20px;
-      border-top:1px solid rgba(23,52,60,.16);
     }
 
     @media (max-width: 980px){
@@ -828,7 +860,7 @@
       .page,
       .nav-inner,
       .footer{
-        width:min(100% - 24px, 1180px);
+        width:min(100% - 24px, var(--max));
       }
 
       .nav-inner{
@@ -873,7 +905,11 @@
       .about-copy,
       .contact-panel{
         padding:24px;
-        border-radius:28px;
+        border-radius:29px;
+      }
+
+      .portrait{
+        height:200px;
       }
 
       .floating-note{
@@ -898,9 +934,9 @@
       }
 
       .strip-item{
+        min-height:auto;
         border-right:0;
         border-bottom:1px solid var(--line);
-        min-height:auto;
       }
 
       .strip-item:last-child{
@@ -912,7 +948,7 @@
         margin-bottom:28px;
       }
 
-      。work-card{
+      .work-card{
         padding:24px;
       }
 
@@ -950,49 +986,57 @@
         <span class="brand-mark">LZ</span>
         <span>李泽同</span>
       </a>
-      <div class="nav-links" aria-label="页面导航">
-        <a href="#work">成果</a>
-        <a href="#experience">经历</a>
-        <a href="#about">关于</a>
-        <a href="#contact">联系</a>
-      </div>
-    </div>
+
+```
+  <div class="nav-links" aria-label="页面导航">
+    <a href="#work">成果</a>
+    <a href="#experience">经历</a>
+    <a href="#about">关于</a>
+    <a href="#contact">联系</a>
+  </div>
+</div>
+```
+
   </nav>
 
   <main id="top">
     <header class="page hero">
       <div>
-        <div class="eyebrow">Shenzhen · B2B Sales · Cross-border · SAAS</div>
-        <h1>
-          李泽同
-          <span class="hero-title-note">ToB 销售 / 跨境电商 / SAAS</span>
-        </h1>
+        <div class="eyebrow">Shenzhen · KA Development · Consultative Sales</div>
 
 ```
+    <h1>
+      李泽同
+      <span class="hero-title-note">KA 客户经理 / ToB 销售</span>
+    </h1>
+
     <p class="position">
-      在高客单价、长决策链、非刚需的企业服务场景中，建立高层信任，把复杂机会推进成可签约、可履约、可增长的商业合作。
+      在高客单价、长决策链、非刚需的企业服务场景中，打通老板与 N-1 核心管理层，激发真实需求，并推动从高层信任到付费成交。
     </p>
 
     <p class="value">
-      拥有百万级企业咨询成交、跨境物流海外客户开发、SAAS/平台型项目资源整合与连续创业经历；理解从获客、需求激发、方案设计到成交交付的完整 B2B 商业链路。
+      拥有百万级 ToB 企业咨询成交、SaaS/平台型产品资源整合、创业项目投融资与政企合作推进经历；擅长把产业趋势、客户痛点、商业模型与合作路径拆解成可执行的顾问式销售方案。
     </p>
 
     <div class="hero-proof" aria-label="关键证明">
       <div class="proof-pill">
         <strong>2个月</strong>
-        <span>独立签约 2 个百万级企业咨询订单</span>
+        <span>到岗 2 个月内独立签约 2 个百万级企业咨询订单</span>
       </div>
+
       <div class="proof-pill">
-        <strong>首周</strong>
-        <span>完成美国、法国海外客户成交</span>
+        <strong>N-1</strong>
+        <span>快速打通老板与核心管理层，推动复杂决策链成交</span>
       </div>
+
       <div class="proof-pill">
         <strong>£20K</strong>
-        <span>支持 SAAS/平台型项目获得花旗银行副行长无偿投资支持</span>
+        <span>推动 SaaS/平台型项目获得花旗银行副行长无偿投资支持</span>
       </div>
+
       <div class="proof-pill">
         <strong>深圳</strong>
-        <span>面向 ToB 销售、跨境电商与 SAAS 合作开放</span>
+        <span>面向 KA 客户开发、ToB 销售与商务合作开放</span>
       </div>
     </div>
 
@@ -1006,18 +1050,20 @@
     <div class="profile-card">
       <div class="portrait">
         <small>Commercial Profile</small>
-        <strong>把产业资源、客户议题与销售动作连接起来。</strong>
+        <strong>把客户议题、商业模型与复杂成交路径连接起来。</strong>
       </div>
 
       <div class="profile-list">
         <div class="profile-item">
-          <span>应聘 / 合作方向</span>
-          <strong>高级客户经理 / ToB 销售</strong>
+          <span>职业定位</span>
+          <strong>KA 客户经理 / ToB 销售</strong>
         </div>
+
         <div class="profile-item">
           <span>核心关键词</span>
-          <strong>ToB 销售｜跨境电商｜SAAS</strong>
+          <strong>KA 客户开发｜百万级 ToB 成交｜顾问式销售｜复杂决策链推进</strong>
         </div>
+
         <div class="profile-item">
           <span>城市</span>
           <strong>深圳，可支持商务合作与面谈</strong>
@@ -1026,8 +1072,8 @@
     </div>
 
     <div class="floating-note">
-      <strong>B2B</strong>
-      <span>高层信任建立、需求激发、复杂决策链推进、方案式销售。</span>
+      <strong>KA</strong>
+      <span>高层信任建立、需求激发、复杂组织判断、方案式成交。</span>
     </div>
   </aside>
 </header>
@@ -1036,19 +1082,22 @@
   <div class="strip">
     <div class="strip-item">
       <b>2</b>
-      <p>到岗 2 个月内，独立签约光华科技、乐动机器人 2 个百万级咨询订单。</p>
+      <p>2 个月内独立签约光华科技、乐动机器人 2 个百万级企业咨询订单。</p>
     </div>
-    <div class="strip-item">
-      <b>2国</b>
-      <p>跨境物流客户开发中，首周独立完成美国、法国客户成交。</p>
-    </div>
+
     <div class="strip-item">
       <b>Top</b>
-      <p>参与 / 服务链路覆盖 TCL、卫龙、泡泡玛特、名创优品、顾家家居等头部品牌与项目。</p>
+      <p>参与 TCL、卫龙等头部客户项目，拓新堡狮龙、爷爷的农场等客户。</p>
     </div>
+
+    <div class="strip-item">
+      <b>SaaS</b>
+      <p>围绕北京憧想科技“画境”项目，负责融资叙事、商业模型与合作路径设计。</p>
+    </div>
+
     <div class="strip-item">
       <b>1w+</b>
-      <p>早期自媒体商业化中，获得蔚来、OPPO 等品牌合作，单条广告报价 1w+。</p>
+      <p>早期自媒体商业化中获得蔚来、OPPO 等品牌合作，单条广告报价 1w+。</p>
     </div>
   </div>
 </section>
@@ -1057,32 +1106,35 @@
   <div class="section-head">
     <div>
       <div class="section-kicker">Selected Work</div>
-      <h2>最能说明销售能力的三组结果</h2>
+      <h2>最能说明成交能力的三组结果</h2>
     </div>
+
     <p>
-      不是单纯执行销售动作，而是在复杂场景里判断关键人、组织议题、商业价值与交付路径，再把机会推进到真实成交或资源落地。
+      不是单纯执行销售动作，而是在复杂场景里判断关键人、组织议题、商业价值与合作路径，再把机会推进到真实成交、资源落地与商业化结果。
     </p>
   </div>
 
   <div class="work-grid">
     <article class="work-card lead">
       <div>
-        <div class="work-index">01 / Enterprise Consulting</div>
-        <h3>在非刚需、高客单价、长决策链的咨询场景中，2 个月独立签约 2 个百万级订单。</h3>
-        <p class="work-meta">乔诺咨询｜华为系 TOP1 企业咨询公司｜客户顾问｜2025–2026</p>
+        <div class="work-index">01 / Million-level B2B Deal</div>
+        <h3>在非刚需、高客单价、长决策链的企业咨询场景中，2 个月独立签约 2 个百万级订单。</h3>
+        <p class="work-meta">乔诺咨询｜客户顾问｜华为系 TOP1 企业咨询公司｜2025–2026</p>
 
         <div class="work-points">
           <div class="point">
             <span>Context</span>
-            <p>面向上市公司与头部企业，企业咨询并非刚需，决策链长、客单价高，需要从战略、人力、供应链、营销等高层议题切入。</p>
+            <p>面向光华科技、乐动机器人等上市公司 / 头部企业，企业咨询非刚需、客单价高、决策链长，需要从战略、人力、供应链、营销等高层议题切入。</p>
           </div>
+
           <div class="point">
             <span>Ownership</span>
-            <p>独立推进老板与 N-1 核心管理层沟通，识别复杂组织关键人，围绕经营痛点激发真实需求，并推动从高层信任到付费签约。</p>
+            <p>快速打通老板与 N-1 核心管理层，识别复杂组织中的关键人，围绕经营痛点挖掘并激发真实需求，推动高层信任建立。</p>
           </div>
+
           <div class="point">
             <span>Result</span>
-            <p>到岗 2 个月内，独立签约光华科技、乐动机器人 2 个百万级企业咨询订单；另参与 TCL、卫龙等头部客户项目。</p>
+            <p>到岗 2 个月内独立签约 2 个百万级企业咨询订单；另参与 TCL、卫龙等头部客户项目，拓新堡狮龙、爷爷的农场等客户。</p>
           </div>
         </div>
       </div>
@@ -1092,51 +1144,56 @@
           <strong>2个月</strong>
           <span>完成关键客户独立签约突破</span>
         </div>
+
         <div>
           <strong>百万级</strong>
-          <span>企业咨询订单，高层复杂决策链成交</span>
+          <span>高客单价 ToB 咨询订单成交</span>
         </div>
       </div>
     </article>
 
     <article class="work-card side">
-      <div class="work-index">02 / Cross-border Logistics</div>
-      <h3>首周独立成交美国、法国客户，完成跨境物流方案式销售。</h3>
-      <p class="work-meta">拓普达跨境物流｜跨境物流客户开发｜2026</p>
+      <div class="work-index">02 / SaaS & Platform Project</div>
+      <h3>推动北京憧想科技“画境”SaaS/平台型产品获得顶级创投、政府与海外机构支持。</h3>
+      <p class="work-meta">上海恒创金疆网络科技有限公司｜CFO｜创业项目投融资 / 政企资本资源整合｜2024–2025</p>
 
       <div class="work-points">
         <div class="point">
           <span>Context</span>
-          <p>公司服务泡泡玛特、名创优品、顾家家居等 Top 品牌，业务涉及成本、时效、清关、履约稳定等高要求。</p>
+          <p>项目需要同时面向资本方、政府、企业、海外机构与场景方，既要讲清产品价值，也要设计可落地的商业化与合作路径。</p>
         </div>
+
         <div class="point">
           <span>Ownership</span>
-          <p>独立处理货物属性、目的国、渠道选择、报价、清关、尾程、异常处理与售后履约。</p>
+          <p>负责商业计划、财务模型、融资材料、路演逻辑、融资叙事、商业模型、资源对接、合作谈判与项目落地。</p>
         </div>
+
         <div class="point">
           <span>Result</span>
-          <p>到岗首周完成美国、法国海外客户成交，并能从物流履约反推客户获客、转化、利润与复购诉求。</p>
+          <p>推动项目获得天图资本、清智资本、IMan Investment 等投资 / 资源支持，以及地方及海外政府资源支持、花旗银行副行长 2 万英镑无偿投资支持。</p>
         </div>
       </div>
     </article>
 
     <article class="work-card side2">
-      <div class="work-index">03 / SAAS & Platform Project</div>
-      <h3>以 CFO 角色支持北京憧想科技“画境”SAAS/平台型项目获得资本、政府与海外机构资源。</h3>
-      <p class="work-meta">上海恒创金疆网络科技有限公司｜CFO｜2024–2025</p>
+      <div class="work-index">03 / Commercial Methodology</div>
+      <h3>连续创业实践叠加李泽湘创业体系训练，形成产品、项目与顾问式解决方案能力。</h3>
+      <p class="work-meta">李泽湘创业体系 / XbotPark｜硬科技创业、产品与项目训练｜2024–2025</p>
 
       <div class="work-points">
         <div class="point">
           <span>Context</span>
-          <p>围绕 SAAS/平台型项目，需要同时理解高校、企业、政府、创投机构与海外政府机构诉求，把产品价值转化为合作路径。</p>
+          <p>在连续创业实践之外，系统学习创业、产品、项目与产业项目逻辑，需要把产业趋势、用户痛点与商业模式连接起来。</p>
         </div>
+
         <div class="point">
           <span>Ownership</span>
-          <p>参与商业计划、融资表达、资源对接与商业化路径设计，推动北京憧想科技“画境”项目对接多方资源。</p>
+          <p>从产品定义、供应链 / 交付路径、融资表达、增长复盘等维度拆解项目落地路径，形成产品 / 项目经理视角。</p>
         </div>
+
         <div class="point">
           <span>Result</span>
-          <p>协助获得天图资本、清智资本、IMan Investment 等投资 / 资源支持，以及花旗银行副行长 2 万英镑无偿投资支持。</p>
+          <p>能够把复杂项目拆解为客户可理解、组织可决策、资源可匹配、后续可落地的顾问式解决方案；早期自媒体项目获得蔚来、OPPO 等品牌合作，单条广告报价 1w+。</p>
         </div>
       </div>
     </article>
@@ -1149,15 +1206,16 @@
       <div class="section-kicker">Experience</div>
       <h2>商业化与销售经历</h2>
     </div>
+
     <p>
-      经历横跨企业咨询、跨境物流、SAAS/平台型项目资源整合、投融资、硬科技创业训练与内容商业化，形成了从客户开发到方案成交的复合型视角。
+      经历横跨百万级企业咨询成交、SaaS/平台型产品资源整合、创业项目投融资、政企合作、硬科技创业训练与内容商业化，形成了从客户开发到成交推进的复合型视角。
     </p>
   </div>
 
   <div class="experience-wrap">
     <aside class="sticky-note">
       <h3>复杂销售，不只靠话术。</h3>
-      <p>李泽同的优势在于把客户真实问题、组织关键人、商业模型与交付资源放在同一张图里推进。</p>
+      <p>李泽同的优势在于把客户真实问题、组织关键人、商业模型、融资叙事与交付路径放在同一张图里推进。</p>
     </aside>
 
     <div class="timeline">
@@ -1165,24 +1223,13 @@
         <time>2025–2026</time>
         <div>
           <h3>客户顾问</h3>
-          <div class="company">乔诺咨询｜华为系 TOP1 企业咨询公司</div>
+          <div class="company">乔诺咨询｜华为系 TOP1 企业咨询公司｜百万级企业咨询成交</div>
           <ul>
             <li>到岗 2 个月内独立签约光华科技、乐动机器人 2 个百万级企业咨询订单。</li>
-            <li>围绕战略、人力、供应链、营销等高层议题挖掘需求，推动高层信任建立与签约。</li>
+            <li>面向上市公司 / 头部企业，在企业咨询非刚需、高客单价、长决策链场景下，打通老板与 N-1 核心管理层。</li>
+            <li>围绕战略、人力、供应链、营销等高层议题挖掘并激发真实需求，推动从高层信任建立到付费签约。</li>
+            <li>签约客户处于热门产业链核心位置，包括 PCB/AI 产业链上游电子化学品、机器人感知方案等方向。</li>
             <li>参与 TCL、卫龙等头部客户项目，拓新堡狮龙、爷爷的农场等客户。</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="role">
-        <time>2026</time>
-        <div>
-          <h3>跨境物流客户开发</h3>
-          <div class="company">拓普达跨境物流</div>
-          <ul>
-            <li>到岗首周独立完成美国、法国海外客户成交。</li>
-            <li>独立处理报价、清关、时效、成本、异常处理与售后履约。</li>
-            <li>理解外贸经营链路，可支撑“平台 + 营销 + 服务 + 履约”的顾问式销售。</li>
           </ul>
         </div>
       </article>
@@ -1191,11 +1238,14 @@
         <time>2024–2025</time>
         <div>
           <h3>CFO</h3>
-          <div class="company">上海恒创金疆网络科技有限公司｜投融资 / 政企资本资源整合 / 商业化落地</div>
+          <div class="company">上海恒创金疆网络科技有限公司｜创业项目投融资 / 政企资本资源整合</div>
           <ul>
-            <li>作为 CFO 参与创业项目咨询、投融资与产业资源整合，推动项目从商业计划、融资表达、资源对接到商业化落地。</li>
-            <li>典型案例——北京憧想科技“画境”项目：围绕 SAAS/平台型项目，协助对接天图资本、清智资本、IMan Investment 等顶级创投机构投资 / 资源支持。</li>
-            <li>推动项目出海日本，对接 JETRO 等海外政府机构资源，获得地方政府、海外政府机构资源支持及花旗银行副行长 2 万英镑无偿投资支持。</li>
+            <li>负责商业计划、财务模型、融资材料、路演逻辑、资源对接、合作谈判与项目落地。</li>
+            <li>典型案例——北京憧想科技“画境”项目：围绕 SaaS/平台型产品，负责融资叙事、商业模型与合作路径设计。</li>
+            <li>推动项目获得天图资本、清智资本、IMan Investment 等顶级创投机构投资 / 资源支持，以及地方及海外政府资源支持。</li>
+            <li>推动项目获得花旗银行副行长 2 万英镑无偿投资支持。</li>
+            <li>推动项目出海日本，对接日本贸易振兴机构 JETRO 等海外政府机构；参与景区及地方政府合作谈判。</li>
+            <li>连续创业成果沉淀为团中央入库专家、上合组织青年创业交流基地创业导师。</li>
           </ul>
         </div>
       </article>
@@ -1204,10 +1254,11 @@
         <time>2024–2025</time>
         <div>
           <h3>硬科技创业、产品与项目训练</h3>
-          <div class="company">李泽湘教授创业体系 / XbotPark 基地</div>
+          <div class="company">李泽湘创业体系 / XbotPark｜硬科技创业、产品与项目训练</div>
           <ul>
-            <li>系统学习创业、产品、项目与产业项目逻辑。</li>
+            <li>在连续创业实践之外，系统学习创业、产品、项目与产业项目逻辑，形成有理论框架支撑的创业与商业化方法论。</li>
             <li>从产业趋势、用户痛点、产品定义、商业模式、供应链 / 交付路径、融资表达与增长复盘理解项目落地。</li>
+            <li>具备产品 / 项目经理视角与顾问式解决方案拆解能力。</li>
           </ul>
         </div>
       </article>
@@ -1231,12 +1282,12 @@
   <div class="about">
     <div class="about-copy">
       <div class="section-kicker">About</div>
-      <h2>工程管理背景，连续创业训练，面向企业增长的销售型人才。</h2>
+      <h2>工程管理背景，连续创业训练，面向复杂成交的顾问式销售人才。</h2>
       <p>
-        李泽同本科就读吉林建筑大学工程管理专业，GPA 3.61/4，专业第一，连续四年获奖学金，并获得校优秀毕业生、校优秀毕业设计等荣誉。工程管理背景让他具备项目拆解、交付路径与成本效率意识；连续创业、投融资、SAAS/平台型项目资源整合与跨境物流经历，则让他能够更快理解企业客户的商业目标与合作顾虑。
+        李泽同本科就读吉林建筑大学工程管理专业，GPA 3.61/4，专业第一，连续四年获奖学金，并获得校优秀毕业生、校优秀毕业设计等荣誉。工程管理背景让他具备项目拆解、路径规划、成本效率与落地交付意识。
       </p>
       <p>
-        他的工作方式不是把产品卖出去，而是把客户所处的产业位置、经营问题、决策关系与资源组合梳理清楚，再用可执行的方案推动对话、信任与成交。
+        他的工作方式不是把产品或服务简单卖出去，而是把客户所处的产业位置、经营问题、关键人关系、商业模型与合作资源梳理清楚，再用可执行的方案推动对话、信任、决策与成交。
       </p>
     </div>
 
@@ -1246,15 +1297,17 @@
         <strong>吉林建筑大学｜工程管理｜本科</strong>
         <p>GPA 3.61/4，专业第一；连续四年奖学金；校优秀毕业生、校优秀毕业设计。</p>
       </div>
+
       <div class="mini-card">
         <span>Academic Proof</span>
         <strong>BIM 方向 SCI 4 篇、专著 1 本、EI 会议一作 2 篇</strong>
         <p>另有维普一作 5 篇、实用新型专利 4 项、BIM 三证认证。</p>
       </div>
+
       <div class="mini-card">
         <span>Recognition</span>
         <strong>团中央入库专家 / 上合组织青年创业交流基地创业导师</strong>
-        <p>长期对接高校、企业、政府、顶级创投机构与海外政府机构。</p>
+        <p>服务多所双一流高校、企业及政府项目，推动投融资、资源对接与项目落地。</p>
       </div>
     </aside>
   </div>
@@ -1263,11 +1316,12 @@
 <section class="page contact" id="contact">
   <div class="contact-panel">
     <div>
-      <div class="section-kicker">联系我们</div>
+      <div class="section-kicker">Contact</div>
       <h2>让我们从一次高质量对话开始。</h2>
       <p>
-        适合沟通 ToB 销售、跨境电商平台服务、SAAS/平台型项目商业化、企业咨询成交、项目资源整合与商务合作机会。
+        适合沟通 KA 客户开发、ToB 销售、顾问式销售、复杂决策链推进、SaaS/平台型产品商业化、创业项目投融资与商务合作机会。
       </p>
+
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:229614921@qq.com">发送邮件</a>
         <a class="btn btn-secondary" href="tel:13137308868">电话联系</a>
@@ -1279,17 +1333,20 @@
         <span>Email</span>
         <strong>229614921@qq.com</strong>
       </a>
+
       <a class="contact-link" href="tel:13137308868">
         <span>Phone</span>
         <strong>13137308868</strong>
       </a>
+
       <div class="contact-link">
         <span>Location</span>
         <strong>深圳</strong>
       </div>
+
       <div class="contact-link">
         <span>Focus</span>
-        <strong>ToB 销售｜跨境电商｜SAAS</strong>
+        <strong>KA 客户开发｜百万级 ToB 成交｜顾问式销售</strong>
       </div>
     </div>
   </div>
@@ -1299,8 +1356,8 @@
   </main>
 
   <footer class="footer">
-    <span>© 李泽同 · Personal Website 主页</span>
-    <span>Built for B2B sales, SAAS, cross-border growth and commercial collaboration.</span>
+    <span>© 李泽同 · Personal Website Homepage</span>
+    <span>Built for KA development, B2B sales and commercial collaboration.</span>
   </footer>
 </body>
 </html>
